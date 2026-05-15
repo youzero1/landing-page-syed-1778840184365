@@ -1,8 +1,6 @@
 .section {
   padding: var(--space-24) var(--space-6);
   background: var(--color-bg-secondary);
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
 }
 
 .container {
@@ -31,12 +29,6 @@
   font-weight: 800;
   letter-spacing: -0.03em;
   color: var(--color-text-primary);
-  margin-bottom: var(--space-4);
-}
-
-.subtitle {
-  font-size: var(--font-size-lg);
-  color: var(--color-text-secondary);
 }
 
 .grid {
@@ -52,21 +44,18 @@
   border-radius: var(--radius-xl);
   display: flex;
   flex-direction: column;
-  gap: var(--space-5);
+  gap: var(--space-6);
   transition: border-color var(--transition-base), transform var(--transition-base);
 }
 
 .card:hover {
   border-color: var(--color-border-hover);
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
 
 .stars {
   display: flex;
-  gap: 3px;
-}
-
-.star {
+  gap: 2px;
   color: #f59e0b;
 }
 
@@ -84,26 +73,27 @@
 }
 
 .avatar {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-gradient-end));
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--font-size-xs);
   font-weight: 700;
+  font-size: var(--font-size-base);
   color: white;
   flex-shrink: 0;
 }
 
-.name {
+.authorInfo {}
+
+.authorName {
   font-size: var(--font-size-sm);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-text-primary);
 }
 
-.role {
+.authorRole {
   font-size: var(--font-size-xs);
   color: var(--color-text-muted);
 }
